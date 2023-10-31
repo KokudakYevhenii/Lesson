@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+<body>
+    <h1>Task 1</h1>
+    <p>Умова: З клавіатури вводиться орендна плата за 1 місяць Визначити скільки треба заплатити за 1 рік, 2 роки, та 10 років.</p>
+    <script>
+        // 0 Вводимо необхідні змінні
+
+        // Орендна плата за 1 місяць - rentPerMonth
+        // Орендна плата за 1 рік - rentPerYear
+        // Орендна плата за 2 роки - rentPer2Years
+        // Орендна плата за 10 років - rentPer10Years
+
+        // 1.Водими необхідні змінні (rentPerMonth )
+        let rentPerMonth = parseFloat(prompt('Плата за місяць'))
+
+        // 2. Обчислюємо результати 
+        let rentPerYear = rentPerMonth * 12;
+        let rentPer2Years = rentPerYear * 2;
+        let rentPer10Years = rentPerYear * 10; 
+
+        // 3. Виводемо значення 
+        document.write (`За 1 рік = ${rentPerYear} <br>`);
+        document.write (`За 2 роки= ${rentPer2Years} <br>`);
+        document.write (`За 10 років = ${rentPer10Years} <br>`);
+        
+    </script>
+</body>
+</html>
